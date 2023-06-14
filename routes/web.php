@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
+Route::get('/', function () {
+    return view('home');
+});
 
-// Route::get('/', [PageController::class, 'index'])->name('home');
-
-// Route::get('/elenco-libri', [PageController::class, 'books'])->name('artists');
-
-// Route::get('/contatti', [PageController::class, 'contacts'])->name('museums');
+Route::get('/', [HomeController::class, 'index'])->name('home');
