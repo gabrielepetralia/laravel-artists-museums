@@ -5,7 +5,7 @@
         <a class="nav-link" href="{{ route('home') }}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Artists</a>
+        <a class="nav-link" href="{{ route('artists.index')}}">Artists</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Museums</a>
