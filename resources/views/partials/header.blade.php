@@ -2,13 +2,13 @@
 
   <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link href="#">Home</a>
+        <a class="nav-link" href="{{ route('home') }}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link href="#">Artists</a>
+        <a class="nav-link" href="#">Artists</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link href="#">Museums</a>
+        <a class="nav-link" href="#">Museums</a>
       </li>
     </ul>
 
