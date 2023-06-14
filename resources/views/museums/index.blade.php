@@ -2,5 +2,7 @@
 
 
 @section('content')
-<h1>Museums Index</h1>
+<div class="container">
+    <h1>Museums</h1>
+  </div>
 @endsection

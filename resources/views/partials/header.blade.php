@@ -8,7 +8,7 @@
         <a class="nav-link" href="{{ route('artists.index')}}">Artists</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Museums</a>
+        <a class="nav-link" href="{{ route('museums.index')}}">Museums</a>
       </li>
     </ul>
 
