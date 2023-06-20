@@ -24,7 +24,7 @@
               <h5 class="mb-3"><div class="fw-bold">Surname:</div> {{$artist->surname}}</h5>
               <h5 class="mb-3"><div class="fw-bold">Type:</div> {{$artist->type}}</h5>
               <div class="d-flex justify-content-center">
-                <a href="{{route('artists.index')}}" class=" btn btn-primary mt-5 w-50 fs-4 align-self-center">Indietro</a
+                <a href="{{route('artists.index')}}" class=" btn btn-primary mt-5 w-50 fs-4 align-self-center">Indietro</a>
               </div>
             </div>
       </div>
