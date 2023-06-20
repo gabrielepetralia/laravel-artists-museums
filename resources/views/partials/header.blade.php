@@ -10,6 +10,9 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('museums.index')}}">Museums</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('artworks.index')}}">Artworks</a>
+      </li>
     </ul>
 
 </header>
