@@ -14,7 +14,8 @@ class ArtworkController extends Controller
      */
     public function index()
     {
-        //
+      $artworks = Artwork::all();
+      return view('artworks.index', compact('artworks'));
     }
 
     /**
@@ -24,7 +25,7 @@ class ArtworkController extends Controller
      */
     public function create()
     {
-        //
+        return view('artworks.create');
     }
 
     /**
@@ -46,7 +47,7 @@ class ArtworkController extends Controller
      */
     public function show(Artwork $artwork)
     {
-        //
+        return view('artworks.show', compact('artwork'));
     }
 
     /**
@@ -57,7 +58,7 @@ class ArtworkController extends Controller
      */
     public function edit(Artwork $artwork)
     {
-        //
+        return view('artworks.edit');
     }
 
     /**
