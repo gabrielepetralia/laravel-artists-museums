@@ -13,6 +13,6 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('artworks.index')}}">Artworks</a>
       </li>
-    </ul>
+  </ul>
 
 </header>
