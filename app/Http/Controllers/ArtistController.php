@@ -81,7 +81,8 @@ class ArtistController extends Controller
      */
     public function destroy(Artist $artist)
     {
-        //
+      $artist->delete();
+      return redirect()->route('artists.index')->with('trashElement', "'$artist->name' è stato eliminato correttamente");
     }
 
 }
