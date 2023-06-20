@@ -81,6 +81,7 @@ class ArtworkController extends Controller
      */
     public function destroy(Artwork $artwork)
     {
-        //
+      $artwork->delete();
+      return redirect()->route('artworks.index')->with('trashElement', "'$artwork->name' è stato eliminato correttamente");
     }
 }
