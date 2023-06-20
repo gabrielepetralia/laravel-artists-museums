@@ -36,7 +36,7 @@
               <a href="{{route('museums.show', $museum)}}" class="btn btn-primary text-white"><i class="fa-regular fa-eye" title="Vedi"></i></a>
               <a href="{{route('museums.edit', $museum)}}" class="btn btn-warning"><i class="fa-regular fa-pen-to-square text-white" title="Modifica"></i></a>
 
-              <form action="{{route('museums.destroy', $museum)}}" onsubmit="return confirm('Confermi l\'eliminazione di {{ $museum->title }} ?')" method="POST" class="d-inline">
+              <form action="{{route('museums.destroy', $museum)}}" onsubmit="return confirm('Confermi l\'eliminazione di {{ $museum->name }} ?')" method="POST" class="d-inline">
 
                   @csrf
                   @method('DELETE')

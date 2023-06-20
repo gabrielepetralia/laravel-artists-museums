@@ -1,10 +1,10 @@
-@extends('layout.main');
+@extends('layout.main')
 
 @section('content')
 <main>
 <div class="container my-4">
   <div class="d-flex justify-content-between">
-    <h1 class="mb-4">Elenco Musei</h1>
+    <h1 class="mb-4">Elenco Artisti</h1>
     <div>
       <a href="{{ route('artists.create')}}" title="Add New Artist" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
     </div>

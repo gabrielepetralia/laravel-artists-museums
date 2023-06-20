@@ -3,7 +3,7 @@
 @section('content')
 <main>
 <div class="container my-4">
-  <h1 class="mb-4">Elenco Musei</h1>
+  <h1 class="mb-4">Elenco Opere D'Arte</h1>
       @if (session('trashElement'))
           <div class="alert alert-success" role="alert">
               {{ session('trashElement') }}
@@ -29,7 +29,7 @@
               <a href="{{route('artworks.show', $artwork)}}" class="btn btn-primary text-white"><i class="fa-regular fa-eye" title="Vedi"></i></a>
               <a href="{{route('artworks.edit', $artwork)}}" class="btn btn-warning"><i class="fa-regular fa-pen-to-square text-white" title="Modifica"></i></a>
 
-              <form action="{{route('artworks.destroy', $artwork)}}" onsubmit="return confirm('Confermi l\'eliminazione di {{ $artwork->title }} ?')" method="POST" class="d-inline">
+              <form action="{{route('artworks.destroy', $artwork)}}" onsubmit="return confirm('Confermi l\'eliminazione di {{ $artwork->name }} ?')" method="POST" class="d-inline">
 
                   @csrf
                   @method('DELETE')
