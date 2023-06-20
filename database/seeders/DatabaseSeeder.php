@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
       // ]);
       $this->call([MuseumsTableSeeder::class]);
       $this->call([ArtistsTableSeeder::class]);
+      $this->call([ArtworksTableSeeder::class]);
     }
 }
