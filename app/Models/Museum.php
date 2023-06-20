@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Museum extends Model
 {
-    use HasFactory;
+  use HasFactory;
+
+  protected $fillable = [
+    'name',
+    'city',
+    'coordinate_x',
+    'coordinate_y'
+  ];
 }
