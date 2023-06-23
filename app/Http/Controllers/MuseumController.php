@@ -67,7 +67,7 @@ class MuseumController extends Controller
      */
     public function edit(Museum $museum)
     {
-        //
+        return view('museums.edit', compact('museum'));
     }
 
     /**
@@ -79,7 +79,11 @@ class MuseumController extends Controller
      */
     public function update(Request $request, Museum $museum)
     {
-        //
+      $form_data = $request->all();
+
+      $museum->update($form_data);
+
+      return redirect()->route('museums.show', compact('museum'));
     }
 
     /**
