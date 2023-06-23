@@ -8,9 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Artwork extends Model
 {
     use HasFactory;
-
+  
     protected $fillable = [
       'name',
       'date'
     ];
+
+    public function artist(){
+      return $this->belongsTo(Artist::class);
+    }
+
+     public function museum(){
+      return $this->belongsTo(Museum::class);
+    }
+
 }
