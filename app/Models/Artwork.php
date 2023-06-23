@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Artwork extends Model
 {
     use HasFactory;
+
+  public function museum()
+  {
+    return $this->belongsTo(Museum::class);
+  }
 }
