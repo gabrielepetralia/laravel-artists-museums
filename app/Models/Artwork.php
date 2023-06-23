@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Artwork extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+      'name',
+      'date'
+    ];
 }
