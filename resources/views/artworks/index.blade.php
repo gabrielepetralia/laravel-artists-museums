@@ -4,7 +4,7 @@
 <main>
 <div class="container my-4">
   <div class="d-flex justify-content-between">
-    <h1 class="mb-4">Elenco Musei</h1>
+    <h1 class="mb-4">Elenco Opere d'arte</h1>
     <div>
       <a href="{{ route('artworks.create')}}" title="Add New Artwork" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
     </div>
