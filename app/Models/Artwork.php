@@ -9,8 +9,11 @@ class Artwork extends Model
 {
     use HasFactory;
 
-  public function museum()
-  {
-    return $this->belongsTo(Museum::class);
-  }
+    public function artist(){
+      return $this->belongsTo(Artist::class);
+    }
+
+     public function museum(){
+      return $this->belongsTo(Museum::class);
+    }
 }
