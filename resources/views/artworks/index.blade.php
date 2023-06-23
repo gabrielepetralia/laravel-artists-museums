@@ -3,7 +3,13 @@
 @section('content')
 <main>
 <div class="container my-4">
-  <h1 class="mb-4">Elenco Opere D'Arte</h1>
+  <div class="d-flex justify-content-between">
+    <h1 class="mb-4">Elenco Musei</h1>
+    <div>
+      <a href="{{ route('artworks.create')}}" title="Add New Artwork" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+    </div>
+  </div>
+
       @if (session('trashElement'))
           <div class="alert alert-success" role="alert">
               {{ session('trashElement') }}
