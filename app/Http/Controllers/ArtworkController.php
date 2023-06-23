@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Artwork;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ArtworkController extends Controller
 {
@@ -16,6 +17,21 @@ class ArtworkController extends Controller
     {
       $artworks = Artwork::all();
       return view('artworks.index', compact('artworks'));
+    }
+
+    public function artworks_list($param)
+    {
+      // $sql = 'SELECT name,id, ST_Distance_sphere(POINT(coordinate_x, coordinate_y), POINT(45, 5)) / 1000 AS distance FROM museums ORDER BY distance';
+
+      // creare la view con sql
+      // CREATE OR REPLACE VIEW coordinates AS
+      // SELECT name,id, ST_Distance_sphere(POINT(coordinate_x, coordinate_y), POINT(45, 5)) / 1000 AS distance FROM museums ORDER BY distance;
+
+      $sql = 'SELECT * FROM coordinates';
+
+      $artworks = DB::select(DB::raw($sql));
+      // $artworks = Artwork::all();
+      return view('artworks.artworks_list', compact('artworks','param'));
     }
 
     /**

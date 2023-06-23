@@ -13,6 +13,9 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('artworks.index')}}">Artworks</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('artworks_list', ['param' => 'param' ])}}">Artworks List</a>
+      </li>
   </ul>
 
 </header>

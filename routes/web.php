@@ -15,4 +15,5 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 Route::resource('artists', ArtistController::class);
 Route::resource('museums', MuseumController::class);
 Route::resource('artworks', ArtworkController::class);
+Route::get('artworks_list/{param}', [ArtworkController::class, 'artworks_list'])->name('artworks_list');
 

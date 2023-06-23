@@ -19,8 +19,8 @@ class MuseumsTableSeeder extends Seeder
           $new_museum = new Museum();
 
           $new_museum->name = 'Nome Museo ' . $i;
-          $new_museum->coordinate_x = 100 + $i;
-          $new_museum->coordinate_y = 100 + $i;
+          $new_museum->coordinate_x = 40 + $i + mt_rand(0, 1000) / 1000;
+          $new_museum->coordinate_y = 1 + $i + mt_rand(0, 1000) / 1000;
           $new_museum->city = 'Citta Museo ' . $i;
 
           $new_museum->save();

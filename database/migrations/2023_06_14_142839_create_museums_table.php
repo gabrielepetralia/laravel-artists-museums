@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
 
             $table->string('name', 50);
-            $table->integer('coordinate_x');
-            $table->integer('coordinate_y');
+            $table->decimal('coordinate_x', 11, 8);
+            $table->decimal('coordinate_y', 11, 8);
             $table->string('city', 100);
 
             $table->timestamps();
