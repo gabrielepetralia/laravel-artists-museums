@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artwork;
+
+
 use Illuminate\Http\Request;
 
 class ArtworkController extends Controller
@@ -25,7 +27,10 @@ class ArtworkController extends Controller
      */
     public function create()
     {
-        return view('artworks.create');
+
+      $museums = Museum::all();
+      $artists = Artist::all();
+        return view('artworks.create', compact('museums', 'artists'));
     }
 
     /**
