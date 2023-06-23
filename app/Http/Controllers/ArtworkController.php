@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artwork;
+use App\Models\Museum;
+use App\Models\Artist;
 use Illuminate\Http\Request;
 
 class ArtworkController extends Controller
@@ -66,7 +68,9 @@ class ArtworkController extends Controller
      */
     public function edit(Artwork $artwork)
     {
-        return view('artworks.edit', compact('artwork'));
+        $artists = Artist::all();
+        $museums = Museum::all();
+        return view('artworks.edit', compact('artwork', 'artists', 'museums'));
     }
 
     /**

@@ -32,6 +32,34 @@
                 >
             </div>
 
+            <div class="mb-4">
+                <label for="artist" class="form-label">Artist</label>
+                <select class="form-select" name="artist" id="artist">
+                  <option value="">Select Artist</option>
+                  @foreach ($artists as $artist)
+                    <option>{{$artist->name}}</option>
+                  @endforeach
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="museum" class="form-label">Artist</label>
+                <select class="form-select" name="museum" id="museum">
+                  <option value="">Select Museum</option>
+                  @foreach ($museums as $museum)
+                    <option>{{$museum->name}}</option>
+                  @endforeach
+                </select>
+                {{-- <input
+                  id="date"
+                  value="{{($artwork->artist) }}"
+                  class="form-control"
+                  name="date"
+                  placeholder="Insert Date"
+                  type="select"
+                > --}}
+            </div>
+
 
 
                 <button type="submit" class="btn btn-success">Salva</button>
