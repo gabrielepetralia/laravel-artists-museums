@@ -15,4 +15,9 @@ class Museum extends Model
     'coordinate_x',
     'coordinate_y'
   ];
+
+  public function artworks()
+  {
+    return $this->hasMany(Artwork::class);
+  }
 }
