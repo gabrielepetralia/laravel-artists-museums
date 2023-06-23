@@ -22,6 +22,8 @@
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Date</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Museum</th>
             <th scope="col">Actions</th>
           </tr>
       </thead>
@@ -31,6 +33,8 @@
             <th scope="row">{{$artwork->id}}</th>
             <td>{{$artwork->name}}</td>
             <td>{{$artwork->date}}</td>
+            <td>{{$artwork->artist->name}}</td>
+            <td>{{$artwork->museum->name}}</td>
             <td>
               <a href="{{route('artworks.show', $artwork)}}" class="btn btn-primary text-white"><i class="fa-regular fa-eye" title="Vedi"></i></a>
               <a href="{{route('artworks.edit', $artwork)}}" class="btn btn-warning"><i class="fa-regular fa-pen-to-square text-white" title="Modifica"></i></a>
