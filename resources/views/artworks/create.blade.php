@@ -32,21 +32,21 @@
             </div>
 
             <div class="mb-4">
-              <label for="artist" class="form-label">Artist</label>
-              <select class="form-select" name="artist" id="artist">
+              <label for="artist_id" class="form-label">Artist</label>
+              <select class="form-select" name="artist_id" id="artist_id">
                 <option value="">Select Artist</option>
                 @foreach ($artists as $artist)
-                  <option>{{$artist->name}}</option>
+                  <option value="{{ $artist->id }}">{{$artist->name}}</option>
                 @endforeach
               </select>
           </div>
 
             <div class="mb-4">
-              <label for="museum" class="form-label">museum</label>
-              <select class="form-select" name="museum" id="museum">
+              <label for="museum_id" class="form-label">museum</label>
+              <select class="form-select" name="museum_id" id="museum_id">
                 <option value="">Select museum</option>
                 @foreach ($museums as $museum)
-                  <option>{{$museum->name}}</option>
+                  <option value="{{ $museum->id }}">{{$museum->name}}</option>
                 @endforeach
               </select>
           </div>

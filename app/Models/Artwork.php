@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Artwork extends Model
 {
     use HasFactory;
-  
+
     protected $fillable = [
       'name',
-      'date'
+      'date',
+      'artist_id',
+      'museum_id'
     ];
 
     public function artist(){
