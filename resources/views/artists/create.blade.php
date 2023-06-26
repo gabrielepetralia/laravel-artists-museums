@@ -41,6 +41,8 @@
                 >
             </div>
 
+            
+
                 <button type="submit" class="btn btn-success">Salva</button>
                 <button type="reset" class="btn btn-danger">Cancella</button>
                 <a href="{{route('artists.index')}}" class=" btn btn-primary align-self-center">Indietro</a>
