@@ -42,9 +42,9 @@
           </div>
 
             <div class="mb-4">
-              <label for="museum_id" class="form-label">museum</label>
+              <label for="museum_id" class="form-label">Museum</label>
               <select class="form-select" name="museum_id" id="museum_id">
-                <option value="">Select museum</option>
+                <option value="">Select Museum</option>
                 @foreach ($museums as $museum)
                   <option value="{{ $museum->id }}">{{$museum->name}}</option>
                 @endforeach

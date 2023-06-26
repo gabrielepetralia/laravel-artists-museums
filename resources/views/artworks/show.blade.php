@@ -21,6 +21,8 @@
       <div class="card-body d-flex flex-column gap-1">
         <h5 class="mb-3"><div class="fw-bold">Name:</div> {{$artwork->name}}</h5>
         <h5 class="mb-3"><div class="fw-bold">Date:</div> {{$artwork->date}}</h5>
+        <h5 class="mb-3"><div class="fw-bold">Artist:</div> {{$artwork->artist->name}}</h5>
+        <h5 class="mb-3"><div class="fw-bold">Museum:</div> {{$artwork->museum->name}}</h5>
 
         <div class="d-flex justify-content-center">
           <a href="{{route('artworks.index')}}" class=" btn btn-primary mt-5 w-25 fs-4 align-self-center">Indietro</a>

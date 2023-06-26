@@ -43,7 +43,7 @@
             </div>
 
             <div class="mb-4">
-                <label for="museum_id" class="form-label">Artist</label>
+                <label for="museum_id" class="form-label">Museum</label>
                 <select class="form-select" name="museum_id" id="museum_id">
                   <option value="">Select Museum</option>
                   @foreach ($museums as $museum)
