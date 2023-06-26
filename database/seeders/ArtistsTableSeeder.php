@@ -19,10 +19,8 @@ class ArtistsTableSeeder extends Seeder
         $new_artist = new Artist();
         $new_artist->name = 'Nome Artista ' . $i;
         $new_artist->surname = 'Cognome Artista ' . $i;
-        $new_artist->type = 'Tipo Musica ' . $i;
+        $new_artist->type = 'Tipo Artista ' . $i;
         $new_artist->save();
-
         }
-
     }
 }

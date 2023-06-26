@@ -15,4 +15,4 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 Route::resource('artists', ArtistController::class);
 Route::resource('museums', MuseumController::class);
 Route::resource('artworks', ArtworkController::class);
-
+Route::get('museums_distance/{param}', [MuseumController::class, 'museums_distance'])->name('museums_distance');

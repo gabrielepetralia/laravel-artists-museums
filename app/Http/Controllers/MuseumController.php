@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Museum;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MuseumController extends Controller
 {
@@ -17,6 +18,19 @@ class MuseumController extends Controller
       $museums = Museum::all();
 
       return view('museums.index', compact('museums'));
+    }
+
+    public function museums_distance($param)
+    {
+      // Creare la View con SQL (tabella solo lettura)
+      // CREATE OR REPLACE VIEW coordinates AS
+      // SELECT name,id, ST_Distance_sphere(POINT(coordinate_x, coordinate_y), POINT(45, 5)) / 1000 AS distance FROM museums ORDER BY distance;
+
+      $sql = 'SELECT * FROM coordinates';
+
+      $museums = DB::select(DB::raw($sql));
+
+      return view('museums.museums_distance', compact('museums', 'param'));
     }
 
     /**

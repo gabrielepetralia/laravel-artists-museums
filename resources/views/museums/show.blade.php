@@ -21,7 +21,7 @@
       <div class="card-body d-flex flex-column gap-1">
         <h5 class="mb-3"><div class="fw-bold">Name:</div> {{$museum->name}}</h5>
         <h5 class="mb-3"><div class="fw-bold">City:</div> {{$museum->city}}</h5>
-        <h5 class="mb-3"><div class="fw-bold">Coordinate:</div> x:{{$museum->coordinate_x}} y:{{$museum->coordinate_y}}</h5>
+        <h5 class="mb-3"><div class="fw-bold">Coordinate:</div> x : {{$museum->coordinate_x}} | y : {{$museum->coordinate_y}}</h5>
         <div class="d-flex justify-content-center">
           <a href="{{route('museums.index')}}" class=" btn btn-primary mt-5 w-25 fs-4 align-self-center">Indietro</a>
         </div>
